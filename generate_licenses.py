@@ -140,7 +140,7 @@ def generate_licenses() -> List[License]:
         pip_licenses_output = subprocess.run(
             "pip-licenses "
             "--from=mixed "
-            "--format=testtest "
+            "--format=json "
             "--with-urls "
             "--with-license-file "
             "--no-license-path ",
